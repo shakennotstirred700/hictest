@@ -1,0 +1,25 @@
+version: 1
+accounts:
+- name: alice
+  coins:
+  - 20000hic
+  - 20000000000uhic
+- name: bob
+  coins:
+  - 10000hic
+  - 10000000000uhic
+faucet:
+  name: bob
+  coins:
+  - 5hic
+  - 100000uhic
+client:
+  typescript:
+    path: ts-client
+  composables:
+    path: vue/src/composables
+  openapi:
+    path: docs/static/openapi.yml
+validators:
+- name: alice
+  bonded: 10000000000uhic
